@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Components from './Components';
 
 function App() {
   
   return (
-    <>
-    <h1> Hello</h1>
-    <p> My name is Aarju</p>
-    </>
+    <div className="App">
+     <Components  />
+    </div>
   );
 }
+
 
 export default App;
