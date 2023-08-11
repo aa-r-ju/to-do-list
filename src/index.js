@@ -1,16 +1,11 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import  ReactDOM  from "react-dom"
 
-ReactDOM.render( 
-  <>
-<h1> Chaitanya Hotel </h1>
-<p> List of food items</p>
-<ol>
-  <li> Chowmin</li>
-  <li> MO:MO</li>
-  <li> Biryani</li>
-  <li> Chilli Chicken</li>
-  <li> Fried Rice</li>
-</ol>
-</>,
+const name = "Aarju"
+const lname = "Pariyar"
+
+ReactDOM.render(
+<>
+<h1> Hello my name is {name} {lname}</h1>
+</>, 
 document.getElementById("root"))
