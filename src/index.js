@@ -1,18 +1,16 @@
-// let React = require("react");
-// let ReactDOM = require("react-dom");
-import React from "react";
-import ReactDOM from "react-dom";
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(
-<>
-<h1> 5 food that i liked </h1>
-<p> list of food are as follows </p>
+ReactDOM.render( 
+  <>
+<h1> Chaitanya Hotel </h1>
+<p> List of food items</p>
 <ol>
+  <li> Chowmin</li>
+  <li> MO:MO</li>
   <li> Biryani</li>
+  <li> Chilli Chicken</li>
   <li> Fried Rice</li>
-  <li> Pizza </li>
-  <li> Ice Cream</li>
-  <li> Chicken</li>
 </ol>
 </>,
-document.getElementById("root"));
+document.getElementById("root"))
