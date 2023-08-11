@@ -1,15 +1,15 @@
-import React from "react"
-import  ReactDOM  from "react-dom"
+import  React from "react"
+import  ReactDOM from "react-dom"
 
 const name = "Aarju"
-const lname = "Pariyar"
-const age =  22
+const currentDate = new Date().toLocaleDateString();
+const currentTime = new Date().toLocaleTimeString();
 
-ReactDOM.render(
-<>
-<h1> Introduction </h1>
-<p> {`Hello my name is ${name} ${lname}`}</p>
-<p> {`I am ${age} years old`}</p>
-<p> {`my birth date is ${20 + 5} August`}</p>
-</>, 
-document.getElementById("root"))
+ReactDOM.render( 
+  <>
+    <h1>Hello, My name is {name} </h1>
+    <p> Todays Date is {currentDate}</p>
+    <p>  Current Time is {currentTime}  </p>
+  </>,
+  document.getElementById("root")
+)
