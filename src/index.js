@@ -1,24 +1,46 @@
-import React from "react"
-import  ReactDOM from "react-dom"
+// import React from "react"
+// import ReactDOM from "react-dom"
 
-const heading = {
-  color:"green",
-  textTransform:"capitalize",
-  textAlign:"center",
-  textShadow:"0px 2px 4px #ffe9c5",
-  fontWeight:"bold",
-  margin:"70px 0"
+// let crnTime = new Date();
+// crnTime = crnTime.getHours();
+// let greeting = " ";
+// let make = { };
+
+// if(crnTime >= 1 && crnTime < 12) {
+//   greeting = "Good Morning";
+//   make.color = "orange"
+// } else if (crnTime >= 12 && crnTime < 19) {
+//   greeting = "Good Afternoon";
+//   make.color = "Green"
+// } else {
+//   greeting = "Good Night";
+//   make.color = "maroon"
+
+// }
+// ReactDOM.render(<h1>Hello Sir, <span cssSt ={make}> {greeting} </span> </h1>,
+// document.getElementById("root"))
+
+
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+let curDate = new Date(2023,8,25,15);
+curDate = curDate.getHours();
+let greeting = " ";
+let cssStyle = { };
+
+if(curDate >= 1 && curDate < 12){
+  greeting = "Good Morning";
+  cssStyle.color = "orange"
+} else if (curDate >=12 && curDate < 19) {
+  greeting = "Good Afternoon";
+  cssStyle.color = "green"
+
+} else {
+  greeting = "Good Night"
+  cssStyle.color = "maroon"
+
 }
 
-
-const name = "Aarju"
-const img1= "https://fastly.picsum.photos/id/458/200/300.jpg?hmac=2d4QALnxYzzYD8DSwuNsa7lutkdOxLsKojuxbNfd31I"
-const img2 = "https://fastly.picsum.photos/id/487/200/200.jpg?hmac=acsZoF1o2OcaX5f6QJScaXgr19-izrth6ECMjr7hG9M"
-ReactDOM.render(
-  <>
-    <h1 style = {heading}> Hello, my name is {name}</h1>
-    <img src = {img1} alt = "randomImage"  />
-    <img src = {img2} alt = "randomImage1"  />
-  </>,
-  document.getElementById("root")
-)
+ReactDOM.render(<h1> Hello Sir, <span style = {cssStyle}>{greeting}</span></h1>,document.getElementById("root"))
