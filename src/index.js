@@ -2,9 +2,12 @@ import React from "react"
 import  ReactDOM from "react-dom"
 
 const heading = {
-  color:"red",
+  color:"green",
   textTransform:"capitalize",
-  textAlign:"center"
+  textAlign:"center",
+  textShadow:"0px 2px 4px #ffe9c5",
+  fontWeight:"bold",
+  margin:"70px 0"
 }
 
 
