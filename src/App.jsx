@@ -1,8 +1,9 @@
 const programmer = "I am a programmer"
 const favpro = "React.js"
 
-let val = " "
 function myName () {
+    let val = " "
+
     return(val = "Arbin");
 }
 export default programmer;
