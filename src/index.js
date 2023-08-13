@@ -1,13 +1,7 @@
 import React from "react"
 import  ReactDOM from "react-dom"
-import Header from "./Header"
-import Para from "./Para"
-import List from "./List"
+import App from "./App"
+
 ReactDOM.render(
-  <>
-  <Header />
-  <Para/>
-  <List/>
-</>,
-document.getElementById("root")
-)
+<App />,
+document.getElementById("root"))
