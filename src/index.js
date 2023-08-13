@@ -1,7 +1,10 @@
 import React from "react"
-import  ReactDOM from "react-dom"
-import App from "./App"
-
+import  ReactDOM  from "react-dom"
+import programmer from "./App"
 ReactDOM.render(
-<App />,
-document.getElementById("root"))
+    <ol>
+        <li>Aarju</li>
+        <li> {programmer} </li>
+    </ol>,
+    document.getElementById("root")
+)
