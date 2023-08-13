@@ -1,11 +1,22 @@
-const programmer = "I am a programmer"
-const favpro = "React.js"
+function add(a,b){
+let sum = a + b;
+return sum;
+} 
 
-function myName () {
-    let val = " "
-
-    return(val = "Arbin");
+function mul(a,b){
+    let multi = a * b;
+    return multi;
 }
-export default programmer;
 
-export {favpro,myName};
+function min(a,b) {
+    let minus = a - b;
+    return minus;
+}
+
+function divi (a,b) {
+    let divide = a / b;
+    divide = divide.toFixed(2)
+    return divide;
+}
+
+export {add,mul,min,divi};
