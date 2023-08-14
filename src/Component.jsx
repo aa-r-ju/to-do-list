@@ -1,18 +1,26 @@
-import React  from "react";
-import {add,mul,min,divi} from "./App"
+import React from "react"
 
 
-function Component() {
+function Card(props){
     return(
         <>
-        <ul>
-        <li>Sum of two numbers is {add(10,20)}</li>
-        <li>Multiply of two numbers is {mul(10,20)}</li>
-        <li>Minus of two numbers is {min(10,20)}</li>
-        <li>Divide of two numbers is {divi(10,3)}</li>
-        </ul>
-        </>
+<div className="cards">
+    <div className="card">
+    <img src = {props.imgsrc} alt = "myPic" className="card-img"/>
+    <div className="card_info">
+        <span className="card_category"> {props.title} </span>
+        <h3 className="card_title"> {props.sname} </h3>
+        <a href = {props.link} target = "_blank"> 
+        <button> Watch Now</button>
+        </a>
+    </div>
+
+    </div>
+</div>
+</>
+
     )
+
 }
 
-export default Component;
+export default Card;
